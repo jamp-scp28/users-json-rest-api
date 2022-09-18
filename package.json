@@ -2,14 +2,9 @@
   "name": "11.-mocks-and-normalization",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "./dist/server.js",
   "scripts": {
-    "tsc": "tsc",
-    "start": "nodemon ./src/server.ts",
-    "profiler": "node -r ts-node/register --prof ./src/server.ts -p=8081 -m=fork",
-    "inspect": "node -r ts-node/register --inspect ./src/server.ts -p=8081 -m=fork",
-    "0x": "0x -- node -r ts-node/register ./src/server.ts -p=8081",
-    "test": "mocha -r ts-node/register src/**/*.test.ts"
+    "start": "node ./dist/server.js"
   },
   "author": "Jorge Molano",
   "license": "ISC",
