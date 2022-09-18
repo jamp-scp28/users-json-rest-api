@@ -1,10 +1,12 @@
 import { adminInterfaces } from "./admin.interfaces";
 import { writeFileSync, readFileSync } from "fs";
+import path from 'path';
 
 export class usersDataService{
     private dataFile: any;
+    file = path.join(process.cwd(), 'files', 'data.json');
     constructor(){
-        this.dataFile = 'src/database/data.json';
+        this.dataFile = this.file;
     }
     
     public addUser(newObject: any){
